@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroma Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-wrapper {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header><header>
+  <div class="header-content">
+    <img src="img/logo.png" alt="Логотип Aroma Café" width="100">
+    <div>
+    <h1 class="logo">Aroma <span class="highlight">Café</span></h1>
+    <p class="subtitle">Відчуй смак затишку з першого ковтка<br>Натуральна кава. Тепла атмосфера. Завжди поруч з тобою.</p>
+  </header>
+
+  <section class="about">
+    <h2>ПРО НАС</h2>
+    <p><strong>«Aroma Café»</strong> — це місце, де кава оживає ароматами, емоціями та теплом. <br>Ми створюємо не просто напої – ми даруємо затишок у чашці, добрі розмови та приємні моменти.</p>
+    <p>У кожну каву ми вкладаємо: ✨ частинку душі,<br> 🌿 натхнення і 💚 багато любові.</p>
+    <p>Ми віримо, що справжня краса – у деталях. Саме тому кожен напій, кожен десерт і кожна усмішка бариста – це щось особливе. Для нас важливо, щоб кожен гість почувався бажаним і унікальним. Бо саме такими ми бачимо наших гостей.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="img/latte.jpg" alt="Латте">
+    <img src="img/cappuccino.jpg" alt="Капучіно">
+    <img src="img/americano.jpg" alt="Американо">
+    <img src="img/mocha.jpg" alt="Мокко">
+  </section>
+
+  <section class="offer">
+    <h2>ЩО МИ ПРОПОНУЄМО</h2>
+    <p>
+      <strong>Aroma Café</strong> кожен знайде щось для себе:</p>
+    <ul>
+      <li>☕️ Класичні кавові напої – еспресо, лате, капучино, флет-вайт</li>
+      <li>🍯 Авторські рецепти – кава з лавандою, з прянощами, сезонні смаки</li>
+      <li>🍰 Домашні десерти – брауні, чізкейки, печиво, тістечка</li>
+      <li>🥥 Альтернативне молоко – вівсяне, кокосове, мигдальне</li>
+      <li><i>❄️ Холодні напої – айс лате, лимонади, кава тонік</i></li>
+    </ul>
+    <p>Ми піклуємося про якість кожного інгредієнта та атмосферу, в якій вам буде приємно повертатися знову
+    </p>
+
+    <!-- Кнопка -->
+    <button class="button" onclick="toggleForm()">Замовити</button>
+
+    <!-- Блок з формою -->
+    <div id="googleForm" class="form-wrapper">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePDAfLrVsG3Ghcj08V1GiWARK0UK8OOEHhVTGs_E64dzccGA/viewform?embedded=true"
+        width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <p><span class="icon">📍</span>м. Київ, вул. Затишна, 15</p>
+    <p><span class="icon">📞</span>+38 (067) 123 45 67</p>
+    <p><span class="icon">📧</span>aroma.cafe@email.com</p>
+    <p><span class="icon">📷</span>@aroma.cafe</p>
+  </section>
+
+  <footer class="footer">
+    <p>©2025 Aroma Café. Усі права захищено. | <a href="#">Політика конфіденційності</a></p>
+  </footer>
+</div>
+
+<script>
+  function toggleForm() {
+    const form = document.getElementById("googleForm");
+    form.style.display = form.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
